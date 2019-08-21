@@ -1,0 +1,10 @@
+drop table if exists news;
+CREATE TABLE `news` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `keyword` varchar(255) DEFAULT NULL,
+  `news_url` varchar(255) DEFAULT NULL,
+  `news_date` varchar(255) DEFAULT NULL,
+  `news_title` longtext,
+  `news_content` longtext,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
